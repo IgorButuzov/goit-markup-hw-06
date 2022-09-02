@@ -91,7 +91,7 @@ transform: translate(-50%, -50%) scale(1.1);
 }
 .modal{
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -609,7 +609,48 @@ display: block;
 .footer-logostudio {
     color: var(--textwhite-color);
 }
+.footer-submit{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    padding-left: 16px;
+    background-color: var(--footerbgc-color);
 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.submit-button{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 10px 28px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.icon-send{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
 .logostudio-footer{
     font-family: 'Raleway';
     font-weight: 700;
