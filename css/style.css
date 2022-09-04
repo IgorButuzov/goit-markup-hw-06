@@ -91,14 +91,14 @@ transform: translate(-50%, -50%) scale(1.1);
 }
 .modal{
     display: flex;
-    position: fixed;
+    flex-direction: column;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    
+    padding: 40px;
     width: 528px;
     height: 581px;
-    padding: 8px;
     
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -107,11 +107,74 @@ transform: translate(-50%, -50%) scale(1.1);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modaltext{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: #212121;
+}
+.form-item:not(:last-child) {
+margin-bottom: 10px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-icons{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 12px;
+}
+.modal-input{
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+}
+.input{
+width: 448px;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding-left: 42px;
+}
+.input-coment{
+    width: 448px;
+    padding:12px 16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    
+}
+.accept{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #757575;
+}
+.conditions{
+    text-decoration-line: underline;
+    color: #2196F3;
+}
 .closebutton{
     display: flex;
     position: absolute;
     width: 30px;
     height: 30px;
+    top: 8px;
     right: 8px;
     justify-content: center;
     align-items: center;
@@ -556,6 +619,14 @@ margin-left: 0;
 }
 .footer-contacts{
     display: block;
+}.footer-form{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--textwhite-color);
+    margin-left: 93px;
 }
 .footer-join{
     font-weight: 700;
