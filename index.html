@@ -462,14 +462,20 @@
                     <textarea name="coment" rows="5" placeholder="Введіть текст" class="input-coment"></textarea>
                 </li>
             </ul>
-            <form class="accept">
-                <input type="checkbox" name="accept" value=" ">
-                <label>
+            <form>
+                <label class="accept">
+                <input type="checkbox" name="accept" value=" " class="checkbox">
                     Погоджуюся з розсилкою та приймаю 
-                    <a href="#" class="conditions">Умови договору</a>
+                <svg class="icon-check">
+                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+                <a href="#" class="conditions">Умови договору</a>
                 </label>
-                
             </form>
+
+            <button type="submit" class="button-send">
+                Відправити
+            </button>
             
             <button type="button" class="closebutton" data-modal-close>
                 <svg class="closebutton-icon">
