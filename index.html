@@ -408,7 +408,7 @@
                 </ul>
             </div>
             <div class="footer-form">
-                <p>Підпишіться на розсилку</p>
+                <p class="footer-p">Підпишіться на розсилку</p>
                 <form name="signup_form" autocomplete="on" novalidate>
                     <div class="footer-submit">
                     <label for="email"></label>
@@ -426,43 +426,41 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <form>
             <p class="modaltext">
                 Залиште свої дані, ми вам передзвонимо
             </p>
-            <ul class="form-items">
-                <li class="form-item">
-                    <label for="name">Ім'я</label>
-                    <div class="modal-input">
+            <label for="name" class="form-label">
+                <span class="title-input">Ім'я</span>
+                <div class="modal-input">
                     <input type="text" name="name" id="name" class="input">
-                    <svg class="modal-icons">
-                        <use href="./images/symbol-defs.svg#icon-person"></use>
-                    </svg>
-                    </div>
-                </li>
-                <li class="form-item">
-                    <label for="phone">Телефон</label>
-                    <div class="modal-input">
+                        <svg class="modal-icons">
+                            <use href="./images/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                </div>
+            </label>
+            <label for="phone" class="form-label">
+                <span class="title-input">Телефон</span>
+                <div class="modal-input">
                     <input type="tel" name="phone" id="phone" class="input">
-                    <svg class="modal-icons">
-                        <use href="./images/symbol-defs.svg#icon-phone"></use>
-                    </svg>
-                    </div>
-                </li>
-                <li class="form-item">
-                    <label for="email">Пошта</label>
-                    <div class="modal-input">
+                        <svg class="modal-icons">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                </div>
+            </label>
+            <label for="email" class="form-label">
+                <span class="title-input">Пошта</span>
+                <div class="modal-input">
                     <input type="email" name="email" id="email" class="input">
-                    <svg class="modal-icons">
-                        <use href="./images/symbol-defs.svg#icon-mail"></use>
-                    </svg>
-                    </div>
-                </li>
-                <li class="form-item">
-                    <label for="coment">Коментар</label>
+                        <svg class="modal-icons">
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                </div>
+            </label>
+                <label for="coment" class="form-label">
+                    <span class="title-input">Коментар</span>
                     <textarea name="coment" rows="5" placeholder="Введіть текст" class="input-coment"></textarea>
-                </li>
-            </ul>
-            <form>
+                </label>
                 <label class="accept">
                 <input type="checkbox" name="accept" value=" " class="checkbox">
                     Погоджуюся з розсилкою та приймаю 
@@ -471,12 +469,10 @@
                 </svg>
                 <a href="#" class="conditions">Умови договору</a>
                 </label>
-            </form>
-
             <button type="submit" class="button-send">
                 Відправити
             </button>
-            
+            </form>
             <button type="button" class="closebutton" data-modal-close>
                 <svg class="closebutton-icon">
                     <use href="./images/symbol-defs.svg#icon-close">
